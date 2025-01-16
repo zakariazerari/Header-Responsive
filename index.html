@@ -5,49 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>header responsive</title>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Responsive Header</title>
 </head>
-<body>
-    <header class="p-5 bg-white  shadow md:flex md:items-center md:justify-between h-28">
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-[poppins cursor-pointer]">
-                <img class="h-24 inline" src="./360_F_241307210_MjjaJC3SJy2zJZ6B7bKGMRsKQbdwRSze-removebg-preview.png" alt="">
-            </span>
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon class="text-orange-600" name="menu-outline" onclick="Menu(this)"></ion-icon>
-                
+<body class="font-[poppins]">
 
+    <!-- Header -->
+    <header class="md:h-20 p-5 bg-white shadow-sm shadow-black md:flex md:justify-between">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold">
+                <img class="h-32" src="./360_F_241307210_MjjaJC3SJy2zJZ6B7bKGMRsKQbdwRSze-removebg-preview.png" alt="Logo">
+            </a>
+            <!-- Menu Icon -->
+            <span class="text-3xl cursor-pointer md:hidden">
+                <ion-icon class="text-orange-600" name="menu-outline" onclick="toggleMenu(this)"></ion-icon>
             </span>
-          </div>
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-            <li class="mx-4 my-4 md:my-0">
-                <a href="#" class=" text-xl hover:text-orange-500 duration-500 text-gray-700"> kitchen</a>
-            </li>
-            <li class="mx-4 my-4 md:my-0">
-                <a href="#" class=" text-xl hover:text-orange-500 duration-500  text-gray-700"> Taste</a>
-            </li>
-            <li class="mx-4 my-4 md:my-0"> 
-                <a href="#" class=" text-xl hover:text-orange-500 duration-500  text-gray-700"> Recipes</a>
-            </li>
-            <li class="mx-4 my-4 md:my-0">
-                <a href="#" class=" text-xl hover:text-orange-500 duration-500  text-gray-700"> Blog</a>
-            </li>
-            <li class="mx-4 my-4 md:my-0">
-                <a href="#" class=" text-xl hover:text-orange-500 duration-500  text-gray-700"> contact</a>
-            </li>
-            <button class="bg-orange-500 text-white md:ml-72 font-[poppins] duration-500 px-6 py-2 mx-2 hover:bg-orange-700 rounded-3xl">
-                0625592042
-            </button>
-        </ul>
-     </header>
-     <script>
-       function Menu(e){
-        let list = document.querySelector('ul');
-        e.name === 'menu-outline' ? (e.name = "close-outline" ,list.classList.add('top-[80px]') , list.classList.add('opacity-100')) : (e.name = "menu-outline" ,list.classList.remove('top-[80px]') , list.classList.remove('opacity-100'))
-       }
-
-     </script>
+        </div>
     
+        <!-- Navigation Menu -->
+        <ul id="menu" class="ml-auto  xl:flex xl:justify-end md:flex md:items-center md:static absolute bg-white bg-opacity-70 w-full left-0 top-[-500px] md:top-auto md:opacity-100 opacity-0 z-10 md:z-auto transition-all duration-500 ease-in-out md:ml-auto">
+            <li class="mx-4 my-4 md:my-0 ">
+                <a href="#" class="text-lg font-bold text-gray-700 hover:text-orange-500 duration-300">Kitchen</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-lg font-bold text-gray-700 hover:text-orange-500 duration-300">Taste</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-lg font-bold text-gray-700 hover:text-orange-500 duration-300">Recipes</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-lg font-bold text-gray-700 hover:text-orange-500 duration-300">Blog</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-lg font-bold text-gray-700 hover:text-orange-500 duration-300">Contact</a>
+            </li>
+            <li>
+                <button class="bg-orange-500 text-white font-bold px-6 py-2 rounded-3xl hover:bg-orange-700 duration-300">
+                    0625592042
+                </button>
+            </li>
+        </ul>
+    </header>
+    
+    
+
+    <!-- Main Section -->
+    <main class="mt-[1px]">
+        <section class="bg-[url('FOOD2-removebg-preview.png')] bg-cover bg-center h-screen flex items-center justify-center px-4">
+            <div class="text-center  backdrop-opacity-45 backdrop-blur p-8 rounded-lg shadow-md">
+                <h1 class="text-4xl font-black text-gray-50">Healthy Food Recipes</h1>
+                <p class="text-gray-50 font-mono mt-4 text-l">Discover a variety of delicious and healthy recipes to suit your taste and style.</p>
+                <button class="mt-6 bg-orange-500 text-white px-6 py-2 rounded-3xl hover:bg-orange-700 duration-300">
+                    Read more
+                </button>
+            </div>
+        </section>
+        
+    </main>
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu(icon) {
+            const menu = document.getElementById('menu');
+            if (icon.name === 'menu-outline') {
+                icon.name = 'close-outline';
+                menu.classList.add('top-[80px]', 'opacity-100');
+            } else {
+                icon.name = 'menu-outline';
+                menu.classList.remove('top-[80px]', 'opacity-100');
+            }
+        }
+    </script>
 </body>
 </html>
