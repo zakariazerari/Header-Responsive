@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Responsive Header</title>
 </head>
 <body class="font-[poppins]">
 
     <!-- Header -->
-    <header class="md:h-20 p-5 bg-white shadow-sm shadow-black md:flex md:justify-between">
+    <header class="md:h-20 p-5 bg-white shadow-sm shadow-black  md:flex md:justify-between">
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="text-2xl font-bold">
@@ -41,7 +45,7 @@
                 <a href="#" class="text-lg font-bold text-gray-700 hover:text-orange-500 duration-300">Contact</a>
             </li>
             <li>
-                <button class="bg-orange-500 text-white font-bold px-6 py-2 rounded-3xl hover:bg-orange-700 duration-300">
+                <button class="bg-orange-500 text-white font-bold px-6 py-2 rounded-3xl hover:bg-orange-700 duration-300"><i class="fa-solid fa-phone text-white"></i>
                     0625592042
                 </button>
             </li>
@@ -52,6 +56,7 @@
 
     <!-- Main Section -->
     <main class="mt-[1px]">
+    <!-- section 1-->    
         <section class="bg-[url('FOOD2-removebg-preview.png')] bg-cover bg-center h-screen flex items-center justify-center px-4">
             <div class="text-center  backdrop-opacity-45 backdrop-blur p-8 rounded-lg shadow-md">
                 <h1 class="text-4xl font-black text-gray-50">Healthy Food Recipes</h1>
@@ -61,8 +66,209 @@
                 </button>
             </div>
         </section>
-        
+        <section class=" flex items-center justify-center flex-col sm:gap-10 p-4 ">
+            <h1 class="text-5xl  bg-orange">  Taste of food</h1>
+           <div class="flex items-center justify-center flex-row flex-wrap gap-7   ">
+            <div class="flex justify-center items-center flex-row gap-5 bg-white w-[325px] p-1  hover:bg-orange-400 hover:text-white" >
+                <img src="./salad (1).png" alt="" class="w-20 h-20">
+                <div>
+                  <h1 class="text-2xl"> salad</h1>
+                  <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos quibusdam.</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-row gap-5 bg-white w-[325px] p-1  hover:bg-orange-400 hover:text-white" >
+                <img src="./birthday-cake.png" alt="" class="w-20 h-20">
+                <div>
+                  <h1 class="text-2xl"> birthday-cake</h1>
+                  <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos quibusdam.</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-row gap-5 bg-white  w-[325px] p-1  hover:bg-orange-400 hover:text-white" >
+                <img src="./burger.png" alt="" class="w-20 h-20">
+                <div>
+                  <h1 class="text-2xl"> burger</h1>
+                  <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos quibusdam.</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-row gap-5 bg-white w-[325px] p-1  hover:bg-orange-400 hover:text-white" >
+                <img src="./ice-cream.png" alt="" class="w-20 h-20">
+                <div>
+                  <h1 class="text-2xl"> ice-cream</h1>
+                  <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos quibusdam.</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-row gap-5 bg-white w-[325px] p-1   hover:bg-orange-400 hover:text-white" >
+                <img src="./spaghetti.png" alt="" class="w-20 h-20">
+                <div>
+                  <h1 class="text-2xl"> Pasta</h1>
+                  <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos quibusdam.</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-row gap-5 bg-white w-[325px] p-1  hover:bg-orange-400 hover:text-white" >
+                <img src="./cookies.png" alt="" class="w-20 h-20">
+                <div>
+                  <h1 class="text-2xl"> Cookies</h1>
+                  <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos quibusdam.</p>
+                </div>
+            </div>
+           </div>
+                <button class="bg-orange-500 w-32 h-10 rounded-3xl text-cyan-50  hover:bg-orange-700 duration-300  ">Read more</button>
+                <div class="flex items-center justify-center mt-10">
+                    <hr class=" w-[280px] ">
+                  </div>
+        </section>
+    <!-- section 2-->    
+        <section class="flex items-center justify-center flex-col gap-14">
+            <h1 class="text-5xl mt-8">Recipes</h1>
+            <div class="flex items-center justify-center flex-row flex-wrap gap-3 ">
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img1.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img2.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img3.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img4.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img5.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img6.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img7.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+                <div class="group relative w-[300px] h-[250px] ">
+                  <img 
+                    src="./img8.jpg" alt="Image de démonstration" class="w-full h-full object-cover transition-transform duration-300 group-hover:orange-100"/>
+                  <div 
+                    class="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300">
+                  </div>
+                </div>
+            </div>
+            <button class="bg-orange-500 w-32 h-10  rounded-3xl text-cyan-50   hover:bg-orange-700 duration-300">Read more</button>
+            <div class="flex items-center justify-center mt-4">
+                <hr class=" w-[280px] ">
+              </div>     
+            </section>
+    <!-- section 4-->   
+        <section  class="flex items-center justify-center flex-col gap-14">
+            <h1 class="text-5xl mt-8 ">Blog</h1>
+            <div class="swiper">
+              <swiper-container class="mySwiper mr-3" effect="cards" grab-cursor="true">
+                <swiper-slide class="flex items-center justify-center flex-col  ">
+                  <img src="./swiper3.jpg" alt="" class="w-24 h-24 rounded-full ">
+                  <div class=" w-auto flex justify-center items-center flex-col ">
+                    <h1 class=" text-lg w-32"> Soufiane dachri</h1>
+                    <p class="text-sm text-gray-300 w-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem?</p>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="flex items-center justify-center flex-col  ">
+                  <img src="./sw.jpg" alt="" class="w-24 h-24 rounded-full ">
+                  <div class=" w-auto">
+                    <h1 class=" text-lg w-32"> zakaria zerari</h1>
+                    <p class="text-sm text-gray-300 w-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem?</p>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="flex items-center justify-center flex-col  ">
+                  <img src="./swiper2.jpg" alt="" class="w-24 h-24 rounded-full ">
+                  <div class=" w-auto ">
+                    <h1 class=" text-lg w-32"> walid abis</h1>
+                    <p class="text-sm text-gray-300 w-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem?</p>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="flex items-center justify-center flex-col  ">
+                  <img src="./swiper1.jpg" alt="" class="w-24 h-24 rounded-full ">
+                  <div class=" w-auto ">
+                    <h1 class=" text-lg w-32"> karim rahmoun</h1>
+                    <p class="text-sm text-gray-300 w-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem?</p>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <button class="bg-orange-500 w-32 h-10  rounded-3xl text-cyan-50   hover:bg-orange-700 duration-300">Read more</button>
+        </section>
+        <!--section 4-->
+        <section class="sm:flex sm:items-center sm:justify-evenly md:flex md:items-center md:justify-evenly bg-orange-400 w-full mt-10">
+          <div class="flex items-center justify-center flex-col">
+            <h1 class="text-2xl text-white">Menu</h1>
+            <p class="mt-3 text-white">kitchen</p>
+            <p class=" text-white" >taste</p>
+            <p class=" text-white">recipes</p>
+            <p class=" text-white">blog</p>
+          </div>
+          <div class="flex items-center justify-center flex-col">
+            <h1 class="text-2xl text-white">Meet Chefs</h1>
+            <p class="mt-3 text-white">mostara seol</p>
+            <p class=" text-white" > Garvik los</p>
+            <p class=" text-white"> sultri morr</p>
+            <p class=" text-white"> sultri morr</p>
+            
+          </div>
+          <div class="flex items-center justify-center flex-col ">
+            <h1 class="text-2xl text-white"> Social Media</h1>
+            <div class="flex justify-center items-center gap-5 mt-3">
+              <i class="fa-brands fa-facebook bg-orange-400 text-white  "></i>
+              <h1 class="text-white">Facebook</h1>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+              <i class="fa-brands fa-instagram bg-orange-400 text-white"></i>
+              <h1 class="text-white">Instagram</h1>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+              <i class="fa-brands fa-twitter  bg-orange-400 text-white"></i>
+              <h1 class="text-white">Twitter  </h1>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+              <i class="fa-brands fa-tiktok  bg-orange-400 text-white"></i>
+              <h1 class="text-white">Tiktok  </h1>
+            </div>
+          </div>
+          <div class="flex justify-center items-center gap-5 flex-col ">
+            <h1 class="text-white text-2xl"> Contact Us</h1>
+            <div> 
+              <input type="email" class=" h-10 rounded-3xl " >
+              <button class="bg-orange-500 w-28 h-10  rounded-3xl text-cyan-50  hover:bg-orange-700 duration-300">Read more</button>
+            </div>
+          </div>
+        </section>
     </main>
+    <footer class=" flex justify-center items-center bg-orange-500 ">
+      <h1 class="text-white"> Designed Shakeel Ahmed Kehar</h1>
+      </footer>
+    
     <!-- JavaScript -->
     <script>
         function toggleMenu(icon) {
@@ -76,5 +282,6 @@
             }
         }
     </script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>
